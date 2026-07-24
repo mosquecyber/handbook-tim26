@@ -1,0 +1,5 @@
+# Ditempatkan otomatis sebagai .htaccess di root folder handbook hasil build.
+# Mencegah folder .git (metadata git dari `git clone`/`git pull` di server)
+# bisa diakses publik lewat browser.
+RewriteEngine On
+RewriteRule ^\.git - [F,L]

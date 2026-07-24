@@ -1,0 +1,17 @@
+# Hasil build MkDocs
+site/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.venv-build/
+.venv-deploy/
+
+# Clone sementara untuk push ke branch dist (lihat build-and-push.sh)
+.dist-clone/
+
+# Editor / OS
+.DS_Store
+.vscode/

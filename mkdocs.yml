@@ -1,0 +1,56 @@
+site_name: Handbook Tim 26
+site_description: Panduan peran dan alur kerja Tim 26
+site_url: https://mosqueranger.org/handbook-tim26/
+
+theme:
+  name: material
+  language: id
+  palette:
+    - scheme: default
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Ganti ke mode gelap
+    - scheme: slate
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Ganti ke mode terang
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.integrate
+
+nav:
+  - Beranda: index.md
+  - A. Manajemen:
+      - 1. CEO: manajemen/ceo.md
+      - 2. COO: manajemen/coo.md
+      - 3. Creative Media Director: manajemen/creative-media-director.md
+  - B. Divisi Inti:
+      - 4. Divisi Creative Program: divisi-inti/creative-program.md
+      - 5. Divisi Surveyor: divisi-inti/surveyor.md
+  - C. Divisi Hubungan Luar:
+      - 7. Divisi Fundraising: hubungan-luar/fundraising.md
+      - 8. Divisi Humas: hubungan-luar/humas.md
+  - D. Divisi Pendukung:
+      - 9. Divisi Mosque Cyber: divisi-pendukung/mosque-cyber.md
+      - 10. Divisi Logistik & Asset Management: divisi-pendukung/logistik-asset.md
+      - 11. Divisi Creative Media: divisi-pendukung/creative-media.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - tables
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+extra:
+  generator: false
