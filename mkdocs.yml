@@ -29,20 +29,23 @@ theme:
 
 nav:
   - Beranda: index.md
+  - Struktur Organisasi: struktur-organisasi.md
   - A. Manajemen:
       - 1. CEO: manajemen/ceo.md
       - 2. COO: manajemen/coo.md
       - 3. Creative Media Director: manajemen/creative-media-director.md
-  - B. Divisi Inti:
+  - B. Divisi Program:
       - 4. Divisi Creative Program: divisi-inti/creative-program.md
       - 5. Divisi Surveyor: divisi-inti/surveyor.md
   - C. Divisi Hubungan Luar:
       - 7. Divisi Fundraising: hubungan-luar/fundraising.md
       - 8. Divisi Humas: hubungan-luar/humas.md
-  - D. Divisi Pendukung:
+  - D. Divisi Media & Pendukung:
       - 9. Divisi Mosque Cyber: divisi-pendukung/mosque-cyber.md
       - 10. Divisi Logistik & Asset Management: divisi-pendukung/logistik-asset.md
       - 11. Divisi Creative Media: divisi-pendukung/creative-media.md
+  - E. Alur Kerja:
+      - 12. Alur Kerja Program Kegiatan: alur-kerja/program-kegiatan.md
 
 markdown_extensions:
   - toc:
@@ -50,7 +53,11 @@ markdown_extensions:
   - tables
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 extra:
   generator: false
